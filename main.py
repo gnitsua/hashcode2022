@@ -1,7 +1,3 @@
-# This is a sample Python script.
-
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
 from Contributor import Contributor
 from Project import Project
 from Solution import Solution
@@ -22,27 +18,9 @@ if __name__ == '__main__':
     # for contributor in solution.contributors:
     #     print(contributor)
 
-    for project in solution.projects.values():
-        print(project)
-
-    # A
-    # solution.projects["WebServer"].assignments = ["Bob", "Anna"]
-    # solution.projects["Logging"].assignments = ["Anna"]
-    # solution.projects["WebChat"].assignments = ["Maria", "Bob"]
-
-    # B
-    # solution.projects["SlidesNextv2"].assignments = ["JenZ", "PhilippH"]
-
-    # C
-    # solution.projects["AssistantMaxv9"].assignments = ["ThomasQ"]
-
-    # D ["{'s592': 3}", "{'s394': 2}"]
-    solution.projects["p1225"].assignments = ["c698", "c350"]
+    # for project in solution.projects:
+    #     print(project)
 
 
     with open("solutions/%s"%solution_id, "w") as file:
         file.write(str(solution))
-
-
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/

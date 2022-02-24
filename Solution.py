@@ -1,5 +1,6 @@
 from Contributor import Contributor
 from Project import Project
+from Solver import Solver
 
 
 class Solution:
@@ -16,8 +17,11 @@ class Solution:
 
         while num_projects > 0:
             project = Project.from_file(input)
-            self.projects[project.name] = project
+            self.projects.append(project)
             num_projects -= 1
+
+        solver = Solver(self.contributors, self.projects)
+        solver.solve()
 
     def __str__(self):
         count = 0
