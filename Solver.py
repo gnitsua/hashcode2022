@@ -7,10 +7,16 @@ class Solver:
         self.projects = projects
 
     def solve(self):
-        # skills = defaultdict(defaultdict(list))
-        # # for contributor in self.contributors:
-        # #     for skill,level in contributor.skills.items():
-        # #         skills["%s-%s"%(skill,level)].append(contributor.name)
+        # combined_projects = []
+        # already_combined = set()
+        # for project in self.projects:
+        #     for project_to_combine in self.projects:
+        #         if(project.name != project_to_combine.name and project_to_combine.name not in already_combined):
+        #             for pro
+
+        # Doesn't seem to matter for B
+        # self.projects.sort(key=lambda project: project.best_before)
+        self.projects.sort(key=lambda project: project.days)
 
         for project in self.projects:
             temp_assignments = []

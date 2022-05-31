@@ -12,7 +12,7 @@ solution_names = {
 }
 
 if __name__ == '__main__':
-    solution_id = "f"
+    solution_id = "b"
     solution = Solution(solution_names[solution_id])
 
     # for contributor in solution.contributors:
